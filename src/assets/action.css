@@ -1,0 +1,50 @@
+.action-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+    gap: 50px;
+}
+
+.edit-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #00dc90;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+.delete-button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ff5454;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) { /* Mobile */
+    .action-buttons {
+        padding: 0 10px;
+        gap: 20px;
+    }
+
+    .edit-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .delete-button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}

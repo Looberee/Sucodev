@@ -1,0 +1,81 @@
+.navbar {
+    background-color: #fff;
+    padding: 30px 150px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar-menu {
+    color: #000;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+    font-size: 16px;
+}
+
+.navbar-menu li:nth-child(4)
+{
+    background-color: #9283e0;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.navbar-menu li:nth-child(4):hover{
+    background-color: #7a6cbf;
+}
+
+.navbar-menu li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu li:nth-child(4) a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-menu li:not(:nth-child(4)) a:hover {
+    color: #ff5480;
+}
+
+/* Responsive */
+@media (max-width: 768px) { /* Tablet and below */
+    .navbar {
+        padding: 10px 50px;
+        gap: 10px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) { /* Mobile */
+    .navbar {
+        gap: 20px;
+        padding: 30px 10px;
+    }
+
+    .navbar h1 {
+        font-size: 1rem;
+    }
+
+    .navbar-menu {
+        gap: 0.9rem;
+        font-size: 0.6rem;
+    }
+
+    .navbar-menu li:nth-child(4) {
+        padding: 8px 15px;
+        border-radius: 8px;
+        font-size: 0.5rem;
+    }
+}
